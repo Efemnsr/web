@@ -40,7 +40,7 @@
             gap: 20px;
         }
 
-        .schedule, .exams {
+        .schedule, .exams, .my-schedule {
             background-color: #23272a;
             padding: 20px;
             border-radius: 10px;
@@ -50,7 +50,7 @@
             max-width: 600px;
         }
 
-        .schedule h2, .exams h2 {
+        .schedule h2, .exams h2, .my-schedule h2 {
             margin-bottom: 15px;
             font-size: 1.5rem;
         }
@@ -135,7 +135,7 @@
 
     <div class="container">
         <div class="schedule">
-            <h2>Ders Programım</h2>
+            <h2>Özel Ders Programım</h2>
             <table id="schedule-table">
                 <!-- Ders programı tablosu burada güncellenecek -->
             </table>
@@ -146,6 +146,20 @@
             <h2>Deneme Sınavları</h2>
             <table id="exam-table">
                 <!-- Deneme sınavı tablosu buraya gelecek -->
+            </table>
+        </div>
+
+        <div class="my-schedule">
+            <h2>Okul Ders Programı</h2>
+            <table>
+                               <tr>
+                    <td class="day">Pazartesi</td>
+                    <td class="lesson">İng2-Mikro2-E.Uyg2-Tde2-ink2</td>
+                </tr>
+                <tr>
+                    <td class="day">Salı</td>
+                    <td class="lesson">Mikro1-Tde3-Din2-E.Uyg2-Rehebr1</td>
+                </tr>
             </table>
         </div>
 
@@ -172,7 +186,7 @@
             { day: 'Çarşamba', lesson: '18:45 - Matematik, 20:15 - Türkçe' },
             { day: 'Perşembe', lesson: '18:00 - Kimya' },
             { day: 'Cuma', lesson: 'Boş' },
-            { day: 'Cumartesi', lesson: '14:00 - Kimya' },
+            { day: 'Cumartesi', lesson: '17:00 - Kimya' },
             { day: 'Pazar', lesson: 'Boş' }
         ];
 
